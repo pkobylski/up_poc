@@ -1,0 +1,36 @@
+up_poc/
+├── README.md
+├── backend/
+│   ├── UpPoc.Api/
+│   │   ├── UpPoc.Api.csproj
+│   │   ├── Program.cs
+│   │   ├── appsettings.json
+│   │   ├── Configuration/
+│   │   │   └── UpdateSettings.cs
+│   │   ├── Controllers/
+│   │   │   └── UpdateController.cs
+│   │   ├── Models/
+│   │   │   ├── UpdateStatusResponse.cs
+│   │   │   └── VersionResponse.cs
+│   │   └── Services/
+│   │       ├── Interfaces/
+│   │       │   ├── IDesktopUpdateService.cs
+│   │       │   ├── IKubernetesUpdateService.cs
+│   │       │   ├── IUpdateOrchestrator.cs
+│   │       │   └── IUpdateStateStore.cs
+│   │       ├── DesktopUpdateService.cs
+│   │       ├── KubernetesUpdateService.cs
+│   │       ├── UpdateOrchestrator.cs
+│   │       └── UpdateStateStore.cs
+├── scripts/
+│   ├── fake-update-desktop-app.sh
+│   ├── update-desktop-app.sh
+│   ├── myapp-update.sudoers
+│   └── myapp-desktop.service
+├── k8s/
+│   ├── namespace.yaml
+│   ├── rbac.yaml
+│   ├── deployment.yaml
+│   └── service.yaml
+└── avalonia-sample/
+    └── UpdateViewModel.cs
