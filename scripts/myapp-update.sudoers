@@ -1,0 +1,1 @@
+app ALL=(root) NOPASSWD: /opt/update-scripts/update-desktop-app.sh
